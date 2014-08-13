@@ -1,0 +1,909 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C09C94218C84DEC00484736 /* BIRemoteMethodReturnType.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C09C94118C84DEC00484736 /* BIRemoteMethodReturnType.m */; };
+		4C37F82A18CD97CB00E49AB6 /* BIRemoteMethodCallObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C37F82918CD97CB00E49AB6 /* BIRemoteMethodCallObjC.m */; };
+		4C37F83018CDAA2700E49AB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C40091A18C724DC005744BD /* Foundation.framework */; };
+		4C37F83218CDAA2700E49AB6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C37F83118CDAA2700E49AB6 /* CoreGraphics.framework */; };
+		4C37F83318CDAA2700E49AB6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C40092B18C724DD005744BD /* UIKit.framework */; };
+		4C37F83918CDAA2700E49AB6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C37F83718CDAA2700E49AB6 /* InfoPlist.strings */; };
+		4C37F83B18CDAA2700E49AB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C37F83A18CDAA2700E49AB6 /* main.m */; };
+		4C37F83F18CDAA2700E49AB6 /* BIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C37F83E18CDAA2700E49AB6 /* BIAppDelegate.m */; };
+		4C37F84218CDAA2700E49AB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C37F84018CDAA2700E49AB6 /* Main.storyboard */; };
+		4C37F84518CDAA2700E49AB6 /* BIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C37F84418CDAA2700E49AB6 /* BIViewController.m */; };
+		4C37F86318CDACA800E49AB6 /* libBIRemoteMethodLayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C40091718C724DC005744BD /* libBIRemoteMethodLayer.a */; };
+		4C40091B18C724DC005744BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C40091A18C724DC005744BD /* Foundation.framework */; };
+		4C40092918C724DD005744BD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C40092818C724DD005744BD /* XCTest.framework */; };
+		4C40092A18C724DD005744BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C40091A18C724DC005744BD /* Foundation.framework */; };
+		4C40092C18C724DD005744BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C40092B18C724DD005744BD /* UIKit.framework */; };
+		4C40092F18C724DD005744BD /* libBIRemoteMethodLayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C40091718C724DC005744BD /* libBIRemoteMethodLayer.a */; };
+		4C40093518C724DD005744BD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C40093318C724DD005744BD /* InfoPlist.strings */; };
+		4C40093718C724DD005744BD /* BIRemoteMethodLayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C40093618C724DD005744BD /* BIRemoteMethodLayerTests.m */; };
+		4C40094218C724F5005744BD /* BIRemoteMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C40094118C724F5005744BD /* BIRemoteMethod.m */; };
+		4C40094518C7250B005744BD /* BIRemoteMethodArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C40094418C7250B005744BD /* BIRemoteMethodArgument.m */; };
+		4C40094C18C726AA005744BD /* BIRemoteMethodCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C40094B18C726AA005744BD /* BIRemoteMethodCall.m */; };
+		4C40094F18C726E7005744BD /* BIRemoteMethodReturn.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C40094E18C726E7005744BD /* BIRemoteMethodReturn.m */; };
+		4C40095218C72B5F005744BD /* BIRemoteMethodInvoke.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C40095118C72B5F005744BD /* BIRemoteMethodInvoke.m */; };
+		4C40095618C73064005744BD /* BIRemoteMethodSocketLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C40095518C73064005744BD /* BIRemoteMethodSocketLayer.m */; };
+		4C88C6B918FD2FB000FB4222 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C40091A18C724DC005744BD /* Foundation.framework */; };
+		4C88C6BE18FD2FB000FB4222 /* BIRemoteMethodClientUtil.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4C88C6BD18FD2FB000FB4222 /* BIRemoteMethodClientUtil.h */; };
+		4C88C6C018FD2FB000FB4222 /* BIRemoteMethodClientUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C88C6BF18FD2FB000FB4222 /* BIRemoteMethodClientUtil.m */; };
+		4C88C6DF18FD2FC800FB4222 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C40091A18C724DC005744BD /* Foundation.framework */; };
+		4C88C6E418FD2FC800FB4222 /* BIRemoteMethodServerUtil.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4C88C6E318FD2FC800FB4222 /* BIRemoteMethodServerUtil.h */; };
+		4C88C6E618FD2FC800FB4222 /* BIRemoteMethodServerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C88C6E518FD2FC800FB4222 /* BIRemoteMethodServerUtil.m */; };
+		4C9F421218E510F800CA3495 /* BIRemoteMethodLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9F421118E510F800CA3495 /* BIRemoteMethodLayer.m */; };
+		4C9F424718E551CF00CA3495 /* BIRemoteMethodSocketLayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9F424618E551CF00CA3495 /* BIRemoteMethodSocketLayerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C37F86018CDAA3D00E49AB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C40090F18C724DC005744BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C40091618C724DC005744BD;
+			remoteInfo = BIRemoteMethodLayer;
+		};
+		4C40092D18C724DD005744BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C40090F18C724DC005744BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C40091618C724DC005744BD;
+			remoteInfo = BIRemoteMethodLayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4C40091518C724DC005744BD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C88C6B618FD2FB000FB4222 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				4C88C6BE18FD2FB000FB4222 /* BIRemoteMethodClientUtil.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C88C6DC18FD2FC800FB4222 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				4C88C6E418FD2FC800FB4222 /* BIRemoteMethodServerUtil.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4C09C94018C84DEC00484736 /* BIRemoteMethodReturnType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIRemoteMethodReturnType.h; sourceTree = "<group>"; };
+		4C09C94118C84DEC00484736 /* BIRemoteMethodReturnType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIRemoteMethodReturnType.m; sourceTree = "<group>"; };
+		4C37F82818CD97CB00E49AB6 /* BIRemoteMethodCallObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIRemoteMethodCallObjC.h; sourceTree = "<group>"; };
+		4C37F82918CD97CB00E49AB6 /* BIRemoteMethodCallObjC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIRemoteMethodCallObjC.m; sourceTree = "<group>"; };
+		4C37F82F18CDAA2700E49AB6 /* memLeakCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = memLeakCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C37F83118CDAA2700E49AB6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4C37F83618CDAA2700E49AB6 /* memLeakCheck-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "memLeakCheck-Info.plist"; sourceTree = "<group>"; };
+		4C37F83818CDAA2700E49AB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4C37F83A18CDAA2700E49AB6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C37F83C18CDAA2700E49AB6 /* memLeakCheck-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "memLeakCheck-Prefix.pch"; sourceTree = "<group>"; };
+		4C37F83D18CDAA2700E49AB6 /* BIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIAppDelegate.h; sourceTree = "<group>"; };
+		4C37F83E18CDAA2700E49AB6 /* BIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIAppDelegate.m; sourceTree = "<group>"; };
+		4C37F84118CDAA2700E49AB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C37F84318CDAA2700E49AB6 /* BIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIViewController.h; sourceTree = "<group>"; };
+		4C37F84418CDAA2700E49AB6 /* BIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIViewController.m; sourceTree = "<group>"; };
+		4C40091718C724DC005744BD /* libBIRemoteMethodLayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBIRemoteMethodLayer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C40091A18C724DC005744BD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4C40091E18C724DC005744BD /* BIRemoteMethodLayer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BIRemoteMethodLayer-Prefix.pch"; sourceTree = "<group>"; };
+		4C40092718C724DD005744BD /* BIRemoteMethodLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BIRemoteMethodLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C40092818C724DD005744BD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4C40092B18C724DD005744BD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		4C40093218C724DD005744BD /* BIRemoteMethodLayerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BIRemoteMethodLayerTests-Info.plist"; sourceTree = "<group>"; };
+		4C40093418C724DD005744BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4C40093618C724DD005744BD /* BIRemoteMethodLayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIRemoteMethodLayerTests.m; sourceTree = "<group>"; };
+		4C40094018C724F5005744BD /* BIRemoteMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BIRemoteMethod.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		4C40094118C724F5005744BD /* BIRemoteMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIRemoteMethod.m; sourceTree = "<group>"; };
+		4C40094318C7250B005744BD /* BIRemoteMethodArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BIRemoteMethodArgument.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		4C40094418C7250B005744BD /* BIRemoteMethodArgument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIRemoteMethodArgument.m; sourceTree = "<group>"; };
+		4C40094618C7251C005744BD /* BIRemoteMethodPublic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIRemoteMethodPublic.h; sourceTree = "<group>"; };
+		4C40094918C72551005744BD /* BIRemoteMethodConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIRemoteMethodConst.h; sourceTree = "<group>"; };
+		4C40094A18C726AA005744BD /* BIRemoteMethodCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIRemoteMethodCall.h; sourceTree = "<group>"; };
+		4C40094B18C726AA005744BD /* BIRemoteMethodCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BIRemoteMethodCall.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		4C40094D18C726E7005744BD /* BIRemoteMethodReturn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BIRemoteMethodReturn.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		4C40094E18C726E7005744BD /* BIRemoteMethodReturn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BIRemoteMethodReturn.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		4C40095018C72B5F005744BD /* BIRemoteMethodInvoke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIRemoteMethodInvoke.h; sourceTree = "<group>"; };
+		4C40095118C72B5F005744BD /* BIRemoteMethodInvoke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BIRemoteMethodInvoke.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		4C40095418C73064005744BD /* BIRemoteMethodSocketLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIRemoteMethodSocketLayer.h; sourceTree = "<group>"; };
+		4C40095518C73064005744BD /* BIRemoteMethodSocketLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIRemoteMethodSocketLayer.m; sourceTree = "<group>"; };
+		4C88C6B818FD2FB000FB4222 /* libBIRemoteMethodClientUtil.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBIRemoteMethodClientUtil.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C88C6BC18FD2FB000FB4222 /* BIRemoteMethodClientUtil-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BIRemoteMethodClientUtil-Prefix.pch"; sourceTree = "<group>"; };
+		4C88C6BD18FD2FB000FB4222 /* BIRemoteMethodClientUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIRemoteMethodClientUtil.h; sourceTree = "<group>"; };
+		4C88C6BF18FD2FB000FB4222 /* BIRemoteMethodClientUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIRemoteMethodClientUtil.m; sourceTree = "<group>"; };
+		4C88C6DE18FD2FC800FB4222 /* libBIRemoteMethodServerUtil.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBIRemoteMethodServerUtil.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C88C6E218FD2FC800FB4222 /* BIRemoteMethodServerUtil-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BIRemoteMethodServerUtil-Prefix.pch"; sourceTree = "<group>"; };
+		4C88C6E318FD2FC800FB4222 /* BIRemoteMethodServerUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIRemoteMethodServerUtil.h; sourceTree = "<group>"; };
+		4C88C6E518FD2FC800FB4222 /* BIRemoteMethodServerUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIRemoteMethodServerUtil.m; sourceTree = "<group>"; };
+		4C9F421018E510F800CA3495 /* BIRemoteMethodLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIRemoteMethodLayer.h; sourceTree = "<group>"; };
+		4C9F421118E510F800CA3495 /* BIRemoteMethodLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIRemoteMethodLayer.m; sourceTree = "<group>"; };
+		4C9F424618E551CF00CA3495 /* BIRemoteMethodSocketLayerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIRemoteMethodSocketLayerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C37F82C18CDAA2700E49AB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C37F86318CDACA800E49AB6 /* libBIRemoteMethodLayer.a in Frameworks */,
+				4C37F83218CDAA2700E49AB6 /* CoreGraphics.framework in Frameworks */,
+				4C37F83318CDAA2700E49AB6 /* UIKit.framework in Frameworks */,
+				4C37F83018CDAA2700E49AB6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C40091418C724DC005744BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C40091B18C724DC005744BD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C40092418C724DD005744BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C40092918C724DD005744BD /* XCTest.framework in Frameworks */,
+				4C40092C18C724DD005744BD /* UIKit.framework in Frameworks */,
+				4C40092A18C724DD005744BD /* Foundation.framework in Frameworks */,
+				4C40092F18C724DD005744BD /* libBIRemoteMethodLayer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C88C6B518FD2FB000FB4222 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C88C6B918FD2FB000FB4222 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C88C6DB18FD2FC800FB4222 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C88C6DF18FD2FC800FB4222 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C37F83418CDAA2700E49AB6 /* memLeakCheck */ = {
+			isa = PBXGroup;
+			children = (
+				4C37F83D18CDAA2700E49AB6 /* BIAppDelegate.h */,
+				4C37F83E18CDAA2700E49AB6 /* BIAppDelegate.m */,
+				4C37F84018CDAA2700E49AB6 /* Main.storyboard */,
+				4C37F84318CDAA2700E49AB6 /* BIViewController.h */,
+				4C37F84418CDAA2700E49AB6 /* BIViewController.m */,
+				4C37F83518CDAA2700E49AB6 /* Supporting Files */,
+			);
+			path = memLeakCheck;
+			sourceTree = "<group>";
+		};
+		4C37F83518CDAA2700E49AB6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C37F83618CDAA2700E49AB6 /* memLeakCheck-Info.plist */,
+				4C37F83718CDAA2700E49AB6 /* InfoPlist.strings */,
+				4C37F83A18CDAA2700E49AB6 /* main.m */,
+				4C37F83C18CDAA2700E49AB6 /* memLeakCheck-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C40090E18C724DC005744BD = {
+			isa = PBXGroup;
+			children = (
+				4C40091C18C724DC005744BD /* BIRemoteMethodLayer */,
+				4C40093018C724DD005744BD /* BIRemoteMethodLayerTests */,
+				4C37F83418CDAA2700E49AB6 /* memLeakCheck */,
+				4C88C6BA18FD2FB000FB4222 /* BIRemoteMethodClientUtil */,
+				4C88C6E018FD2FC800FB4222 /* BIRemoteMethodServerUtil */,
+				4C40091918C724DC005744BD /* Frameworks */,
+				4C40091818C724DC005744BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4C40091818C724DC005744BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C40091718C724DC005744BD /* libBIRemoteMethodLayer.a */,
+				4C40092718C724DD005744BD /* BIRemoteMethodLayerTests.xctest */,
+				4C37F82F18CDAA2700E49AB6 /* memLeakCheck.app */,
+				4C88C6B818FD2FB000FB4222 /* libBIRemoteMethodClientUtil.a */,
+				4C88C6DE18FD2FC800FB4222 /* libBIRemoteMethodServerUtil.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C40091918C724DC005744BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C40091A18C724DC005744BD /* Foundation.framework */,
+				4C40092818C724DD005744BD /* XCTest.framework */,
+				4C40092B18C724DD005744BD /* UIKit.framework */,
+				4C37F83118CDAA2700E49AB6 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C40091C18C724DC005744BD /* BIRemoteMethodLayer */ = {
+			isa = PBXGroup;
+			children = (
+				4C40094618C7251C005744BD /* BIRemoteMethodPublic.h */,
+				4C40094018C724F5005744BD /* BIRemoteMethod.h */,
+				4C40094118C724F5005744BD /* BIRemoteMethod.m */,
+				4C40094318C7250B005744BD /* BIRemoteMethodArgument.h */,
+				4C40094418C7250B005744BD /* BIRemoteMethodArgument.m */,
+				4C09C94018C84DEC00484736 /* BIRemoteMethodReturnType.h */,
+				4C09C94118C84DEC00484736 /* BIRemoteMethodReturnType.m */,
+				4C40094A18C726AA005744BD /* BIRemoteMethodCall.h */,
+				4C40094B18C726AA005744BD /* BIRemoteMethodCall.m */,
+				4C37F82818CD97CB00E49AB6 /* BIRemoteMethodCallObjC.h */,
+				4C37F82918CD97CB00E49AB6 /* BIRemoteMethodCallObjC.m */,
+				4C40094D18C726E7005744BD /* BIRemoteMethodReturn.h */,
+				4C40094E18C726E7005744BD /* BIRemoteMethodReturn.m */,
+				4C40095018C72B5F005744BD /* BIRemoteMethodInvoke.h */,
+				4C40095118C72B5F005744BD /* BIRemoteMethodInvoke.m */,
+				4C9F421018E510F800CA3495 /* BIRemoteMethodLayer.h */,
+				4C9F421118E510F800CA3495 /* BIRemoteMethodLayer.m */,
+				4C40095418C73064005744BD /* BIRemoteMethodSocketLayer.h */,
+				4C40095518C73064005744BD /* BIRemoteMethodSocketLayer.m */,
+				4C40094918C72551005744BD /* BIRemoteMethodConst.h */,
+				4C40091D18C724DC005744BD /* Supporting Files */,
+			);
+			path = BIRemoteMethodLayer;
+			sourceTree = "<group>";
+		};
+		4C40091D18C724DC005744BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C40091E18C724DC005744BD /* BIRemoteMethodLayer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C40093018C724DD005744BD /* BIRemoteMethodLayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C40093618C724DD005744BD /* BIRemoteMethodLayerTests.m */,
+				4C9F424618E551CF00CA3495 /* BIRemoteMethodSocketLayerTests.m */,
+				4C40093118C724DD005744BD /* Supporting Files */,
+			);
+			path = BIRemoteMethodLayerTests;
+			sourceTree = "<group>";
+		};
+		4C40093118C724DD005744BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C40093218C724DD005744BD /* BIRemoteMethodLayerTests-Info.plist */,
+				4C40093318C724DD005744BD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C88C6BA18FD2FB000FB4222 /* BIRemoteMethodClientUtil */ = {
+			isa = PBXGroup;
+			children = (
+				4C88C6BD18FD2FB000FB4222 /* BIRemoteMethodClientUtil.h */,
+				4C88C6BF18FD2FB000FB4222 /* BIRemoteMethodClientUtil.m */,
+				4C88C6BB18FD2FB000FB4222 /* Supporting Files */,
+			);
+			path = BIRemoteMethodClientUtil;
+			sourceTree = "<group>";
+		};
+		4C88C6BB18FD2FB000FB4222 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C88C6BC18FD2FB000FB4222 /* BIRemoteMethodClientUtil-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C88C6E018FD2FC800FB4222 /* BIRemoteMethodServerUtil */ = {
+			isa = PBXGroup;
+			children = (
+				4C88C6E318FD2FC800FB4222 /* BIRemoteMethodServerUtil.h */,
+				4C88C6E518FD2FC800FB4222 /* BIRemoteMethodServerUtil.m */,
+				4C88C6E118FD2FC800FB4222 /* Supporting Files */,
+			);
+			path = BIRemoteMethodServerUtil;
+			sourceTree = "<group>";
+		};
+		4C88C6E118FD2FC800FB4222 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C88C6E218FD2FC800FB4222 /* BIRemoteMethodServerUtil-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C37F82E18CDAA2700E49AB6 /* memLeakCheck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C37F85A18CDAA2800E49AB6 /* Build configuration list for PBXNativeTarget "memLeakCheck" */;
+			buildPhases = (
+				4C37F82B18CDAA2700E49AB6 /* Sources */,
+				4C37F82C18CDAA2700E49AB6 /* Frameworks */,
+				4C37F82D18CDAA2700E49AB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C37F86118CDAA3D00E49AB6 /* PBXTargetDependency */,
+			);
+			name = memLeakCheck;
+			productName = memLeakCheck;
+			productReference = 4C37F82F18CDAA2700E49AB6 /* memLeakCheck.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4C40091618C724DC005744BD /* BIRemoteMethodLayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C40093A18C724DD005744BD /* Build configuration list for PBXNativeTarget "BIRemoteMethodLayer" */;
+			buildPhases = (
+				4C40091318C724DC005744BD /* Sources */,
+				4C40091418C724DC005744BD /* Frameworks */,
+				4C40091518C724DC005744BD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BIRemoteMethodLayer;
+			productName = BIRemoteMethodLayer;
+			productReference = 4C40091718C724DC005744BD /* libBIRemoteMethodLayer.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4C40092618C724DD005744BD /* BIRemoteMethodLayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C40093D18C724DD005744BD /* Build configuration list for PBXNativeTarget "BIRemoteMethodLayerTests" */;
+			buildPhases = (
+				4C40092318C724DD005744BD /* Sources */,
+				4C40092418C724DD005744BD /* Frameworks */,
+				4C40092518C724DD005744BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C40092E18C724DD005744BD /* PBXTargetDependency */,
+			);
+			name = BIRemoteMethodLayerTests;
+			productName = BIRemoteMethodLayerTests;
+			productReference = 4C40092718C724DD005744BD /* BIRemoteMethodLayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4C88C6B718FD2FB000FB4222 /* BIRemoteMethodClientUtil */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C88C6D418FD2FB100FB4222 /* Build configuration list for PBXNativeTarget "BIRemoteMethodClientUtil" */;
+			buildPhases = (
+				4C88C6B418FD2FB000FB4222 /* Sources */,
+				4C88C6B518FD2FB000FB4222 /* Frameworks */,
+				4C88C6B618FD2FB000FB4222 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BIRemoteMethodClientUtil;
+			productName = BIRemoteMethodClientUtil;
+			productReference = 4C88C6B818FD2FB000FB4222 /* libBIRemoteMethodClientUtil.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4C88C6DD18FD2FC800FB4222 /* BIRemoteMethodServerUtil */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C88C6FA18FD2FC900FB4222 /* Build configuration list for PBXNativeTarget "BIRemoteMethodServerUtil" */;
+			buildPhases = (
+				4C88C6DA18FD2FC800FB4222 /* Sources */,
+				4C88C6DB18FD2FC800FB4222 /* Frameworks */,
+				4C88C6DC18FD2FC800FB4222 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BIRemoteMethodServerUtil;
+			productName = BIRemoteMethodServerUtil;
+			productReference = 4C88C6DE18FD2FC800FB4222 /* libBIRemoteMethodServerUtil.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C40090F18C724DC005744BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Baidu;
+				TargetAttributes = {
+					4C40092618C724DD005744BD = {
+						TestTargetID = 4C37F82E18CDAA2700E49AB6;
+					};
+				};
+			};
+			buildConfigurationList = 4C40091218C724DC005744BD /* Build configuration list for PBXProject "BIRemoteMethodLayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C40090E18C724DC005744BD;
+			productRefGroup = 4C40091818C724DC005744BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C40091618C724DC005744BD /* BIRemoteMethodLayer */,
+				4C40092618C724DD005744BD /* BIRemoteMethodLayerTests */,
+				4C37F82E18CDAA2700E49AB6 /* memLeakCheck */,
+				4C88C6B718FD2FB000FB4222 /* BIRemoteMethodClientUtil */,
+				4C88C6DD18FD2FC800FB4222 /* BIRemoteMethodServerUtil */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C37F82D18CDAA2700E49AB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C37F83918CDAA2700E49AB6 /* InfoPlist.strings in Resources */,
+				4C37F84218CDAA2700E49AB6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C40092518C724DD005744BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C40093518C724DD005744BD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C37F82B18CDAA2700E49AB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C37F84518CDAA2700E49AB6 /* BIViewController.m in Sources */,
+				4C37F83B18CDAA2700E49AB6 /* main.m in Sources */,
+				4C37F83F18CDAA2700E49AB6 /* BIAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C40091318C724DC005744BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C40095618C73064005744BD /* BIRemoteMethodSocketLayer.m in Sources */,
+				4C40094518C7250B005744BD /* BIRemoteMethodArgument.m in Sources */,
+				4C40094F18C726E7005744BD /* BIRemoteMethodReturn.m in Sources */,
+				4C9F421218E510F800CA3495 /* BIRemoteMethodLayer.m in Sources */,
+				4C40094C18C726AA005744BD /* BIRemoteMethodCall.m in Sources */,
+				4C40094218C724F5005744BD /* BIRemoteMethod.m in Sources */,
+				4C37F82A18CD97CB00E49AB6 /* BIRemoteMethodCallObjC.m in Sources */,
+				4C09C94218C84DEC00484736 /* BIRemoteMethodReturnType.m in Sources */,
+				4C40095218C72B5F005744BD /* BIRemoteMethodInvoke.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C40092318C724DD005744BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C9F424718E551CF00CA3495 /* BIRemoteMethodSocketLayerTests.m in Sources */,
+				4C40093718C724DD005744BD /* BIRemoteMethodLayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C88C6B418FD2FB000FB4222 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C88C6C018FD2FB000FB4222 /* BIRemoteMethodClientUtil.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C88C6DA18FD2FC800FB4222 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C88C6E618FD2FC800FB4222 /* BIRemoteMethodServerUtil.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C37F86118CDAA3D00E49AB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C40091618C724DC005744BD /* BIRemoteMethodLayer */;
+			targetProxy = 4C37F86018CDAA3D00E49AB6 /* PBXContainerItemProxy */;
+		};
+		4C40092E18C724DD005744BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C40091618C724DC005744BD /* BIRemoteMethodLayer */;
+			targetProxy = 4C40092D18C724DD005744BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4C37F83718CDAA2700E49AB6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C37F83818CDAA2700E49AB6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4C37F84018CDAA2700E49AB6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C37F84118CDAA2700E49AB6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4C40093318C724DD005744BD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C40093418C724DD005744BD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C37F85B18CDAA2800E49AB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "memLeakCheck/memLeakCheck-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "memLeakCheck/memLeakCheck-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4C37F85C18CDAA2800E49AB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "memLeakCheck/memLeakCheck-Prefix.pch";
+				INFOPLIST_FILE = "memLeakCheck/memLeakCheck-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4C40093818C724DD005744BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4C40093918C724DD005744BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C40093B18C724DD005744BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/BIRemoteMethodLayer.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BIRemoteMethodLayer/BIRemoteMethodLayer-Prefix.pch";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7";
+			};
+			name = Debug;
+		};
+		4C40093C18C724DD005744BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/BIRemoteMethodLayer.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BIRemoteMethodLayer/BIRemoteMethodLayer-Prefix.pch";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7";
+			};
+			name = Release;
+		};
+		4C40093E18C724DD005744BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/memLeakCheck.app/memLeakCheck";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BIRemoteMethodLayer/BIRemoteMethodLayer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BIRemoteMethodLayerTests/BIRemoteMethodLayerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4C40093F18C724DD005744BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/memLeakCheck.app/memLeakCheck";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BIRemoteMethodLayer/BIRemoteMethodLayer-Prefix.pch";
+				INFOPLIST_FILE = "BIRemoteMethodLayerTests/BIRemoteMethodLayerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		4C88C6D518FD2FB100FB4222 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/BIRemoteMethodClientUtil.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BIRemoteMethodClientUtil/BIRemoteMethodClientUtil-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../BIRemoteMethodLayer,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4C88C6D618FD2FB100FB4222 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/BIRemoteMethodClientUtil.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BIRemoteMethodClientUtil/BIRemoteMethodClientUtil-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../BIRemoteMethodLayer,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4C88C6FB18FD2FC900FB4222 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/BIRemoteMethodServerUtil.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BIRemoteMethodServerUtil/BIRemoteMethodServerUtil-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../BIRemoteMethodLayer,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4C88C6FC18FD2FC900FB4222 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/BIRemoteMethodServerUtil.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BIRemoteMethodServerUtil/BIRemoteMethodServerUtil-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../BIRemoteMethodLayer,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C37F85A18CDAA2800E49AB6 /* Build configuration list for PBXNativeTarget "memLeakCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C37F85B18CDAA2800E49AB6 /* Debug */,
+				4C37F85C18CDAA2800E49AB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C40091218C724DC005744BD /* Build configuration list for PBXProject "BIRemoteMethodLayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C40093818C724DD005744BD /* Debug */,
+				4C40093918C724DD005744BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C40093A18C724DD005744BD /* Build configuration list for PBXNativeTarget "BIRemoteMethodLayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C40093B18C724DD005744BD /* Debug */,
+				4C40093C18C724DD005744BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C40093D18C724DD005744BD /* Build configuration list for PBXNativeTarget "BIRemoteMethodLayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C40093E18C724DD005744BD /* Debug */,
+				4C40093F18C724DD005744BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C88C6D418FD2FB100FB4222 /* Build configuration list for PBXNativeTarget "BIRemoteMethodClientUtil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C88C6D518FD2FB100FB4222 /* Debug */,
+				4C88C6D618FD2FB100FB4222 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C88C6FA18FD2FC900FB4222 /* Build configuration list for PBXNativeTarget "BIRemoteMethodServerUtil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C88C6FB18FD2FC900FB4222 /* Debug */,
+				4C88C6FC18FD2FC900FB4222 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C40090F18C724DC005744BD /* Project object */;
+}
