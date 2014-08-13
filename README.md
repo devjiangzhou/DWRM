@@ -2,7 +2,7 @@ DWRM
 ====
 
 EN:
-A light weight remote method calling library
+A light weight remote method invoking library
 
 NOTE:All class/struct/enum etc. are prefixed with a 'BI' rather than a 'DW', this is because previously DWRM is written for Baidu Inputmethod.
 
